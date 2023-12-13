@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calcolatrice</title>
+    <link rel="stylesheet" href="calcolatrice.css">
+    <script src="calcolatrice.js"></script>
+</head>
+<body>
+    <div class="finestra">
+        <form id="calculatorForm">
+            <label for="val1">Inserire il primo valore:</label>
+            <input type="number" step="0.0001" name="val1" id="val1" placeholder="Primo valore">
+            <br>
+            <label for="val2">Inserire il secondo valore:</label>
+            <input type="number" step="0.0001" id="val2" name="val2" placeholder="Secondo valore">
+            <br>
+            <select name="selection" style="margin-top:5px;" id="selection">
+                <option value="somma">Somma</option>
+                <option value="differenza">Differenza</option>
+                <option value="prodotto">Prodotto</option>
+                <option value="quoziente">Quoziente</option>
+            </select>
+            <br>
+            <input type="submit" class="button">
+        </form>
+        <fieldset style="height:25px; border-radius:20px;" id="tf">
+            <legend>risultato</legend>
+            <p style='margin:0px' id="p"></p>
+        </fieldset>
+    </div> 
